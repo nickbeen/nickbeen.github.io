@@ -1,0 +1,7 @@
+# Auto detect
+*       text=auto
+
+# Explicit handling
+*.html  text diff=html
+*.md    text diff=markdown
+*.scss  text diff=css
