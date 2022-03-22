@@ -2,6 +2,11 @@ lang: "en"
 timezone: "Europe/Amsterdam"
 title: "Nick Been"
 
+exclude:
+  - package*.json
+  - tailwind.config.js
+  - workbox-config.js
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
