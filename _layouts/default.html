@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+  <head>
+    {% include head.html %}
+    <title>{{ post.title | default: site.title }}</title>
+  </head>
+  <body class="container">
+    <header>
+      {% include header.html %}
+    </header>
+    <main>
+      {{ content }}
+    </main>
+    <footer>
+      {% include footer.html %}
+    </footer>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/assets/js/serviceworker.js');
+        })
+      }
+    </script>
+  </body>
+</html>
