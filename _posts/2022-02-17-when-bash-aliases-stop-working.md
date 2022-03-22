@@ -1,7 +1,7 @@
 ---
-date: 2022-02-17 20:00:00 -0100
+date: 2022-02-17 20:00:00 +0100
 layout: post
-tags: bash
+tags: [bash, ssh]
 title: When bash_aliases stop working
 ---
 
