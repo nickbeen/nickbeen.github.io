@@ -1,11 +1,15 @@
 {
   "private": true,
   "scripts": {
-    "build": "build:workbox",
-    "build:workbox": "esbuild --outfile=./assets/js/serviceworker.js --bundle ./assets/js/serviceworker.ts --minify && workbox injectManifest"
+    "build": "build:tailwind && build:workbox",
+    "build:tailwind": "tailwindcss -i ./_sass/tailwind.scss -o ./assets/css/tailwind.css --minify",
+    "build:workbox": "esbuild --outfile=./assets/js/serviceworker.js --bundle ./assets/js/serviceworker.ts --minify && workbox injectManifest",
+    "watch": "watch:tailwind",
+    "watch:tailwind": "tailwindcss -i ./_sass/tailwind.scss -o ./assets/css/tailwind.css --watch"
   },
   "devDependencies": {
     "esbuild": "^0.14",
+    "tailwindcss": "^3.0",
     "workbox-cli": "^6.5",
     "workbox-precaching": "^6.5",
     "workbox-recipes": "^6.5"
