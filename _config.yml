@@ -2,10 +2,6 @@ lang: "en"
 timezone: "Europe/Amsterdam"
 title: "Nick Been"
 
-exclude:
-  - *.config.js
-  - package*.json
-
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
