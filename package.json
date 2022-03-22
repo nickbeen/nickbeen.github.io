@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "build:workbox",
+    "build:workbox": "esbuild --outfile=./assets/js/serviceworker.js --bundle ./assets/js/serviceworker.ts --minify && workbox injectManifest"
+  },
+  "devDependencies": {
+    "esbuild": "^0.14",
+    "workbox-cli": "^6.5",
+    "workbox-precaching": "^6.5",
+    "workbox-recipes": "^6.5"
+  }
+}
