@@ -1,5 +1,6 @@
 ---
 title: Privacy Policy
+url: /privacy
 ---
 
 ## No first party data collection
