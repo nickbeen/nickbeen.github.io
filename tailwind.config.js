@@ -8,6 +8,13 @@ module.exports = {
   ],
   darkMode: 'class',
   theme: {
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: '8rem',
+        sm: '1rem'
+      }
+    },
     extend: {},
   },
   plugins: [],

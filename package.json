@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "build": "build:tailwind && build:workbox",
-    "build:tailwind": "tailwindcss -i ./_sass/tailwind.scss -o ./assets/css/tailwind.css --minify",
+    "build:tailwind": "tailwindcss -i ./_sass/tailwind.css -o ./assets/css/tailwind.css --minify",
     "build:workbox": "esbuild --outfile=./assets/js/serviceworker.js --bundle ./assets/js/serviceworker.ts --minify && workbox injectManifest",
     "watch": "watch:tailwind",
     "watch:tailwind": "tailwindcss -i ./_sass/tailwind.scss -o ./assets/css/tailwind.css --watch"
