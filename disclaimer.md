@@ -1,6 +1,5 @@
 ---
 title: Disclaimer
-url: /disclaimer
 ---
 
 ## Terms of use
