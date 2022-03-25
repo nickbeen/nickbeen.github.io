@@ -29,9 +29,9 @@ layout: default
     </ul>
   </header>
   {{ content }}
-  <footer class="flex flex-wrap justify-center space-x-2">
+  <footer class="flex flex-wrap space-x-2">
       {% for tag in page.tags %}
-      <span class="rounded-full shadow-sm bg-cyan-500 text-white font-semibold align-center px-4 py-2">#{{ tag }}</span>
+      <span class="rounded-full shadow-sm bg-cyan-500 text-white font-semibold align-center px-2 py-1">#{{ tag }}</span>
       {% endfor %}
   </footer>
 </article>
