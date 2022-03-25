@@ -3,7 +3,7 @@ layout: default
 ---
 
 {% capture read_time %}
-  {{ page.content | number_of_words | divided_by: 180 }}
+  {{ content | number_of_words | divided_by: 180 }}
 {% endcapture %}
 
 <article>
