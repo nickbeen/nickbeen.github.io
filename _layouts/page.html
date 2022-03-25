@@ -13,11 +13,9 @@ layout: default
     </ul>
   </header>
   {{ content }}
-  <footer>
-    <ul>
+  <footer class="flex flex-wrap space-x-2">
       {% for tag in page.tags %}
-      <li>{{ tag }}</li>
+    <span class="rounded-full shadow-sm bg-cyan-500 text-white font-semibold align-center px-2 py-1">#{{ tag }}</span>
       {% endfor %}
-    </ul>
   </footer>
 </article>
