@@ -10,12 +10,11 @@ layout: default
   <header>
     <h1>{{ page.title }}</h1>
     <div>
-      {{ page.date | date_to_rfc822 }}
+      {{ page.date | date_to_string }}
       {% if page.last_modified_at %}
-        (Last updated: {{ page.last_modified_at | date_to_rfc822 }})
+        (Last updated: {{ page.last_modified_at | date_to_string }})
       {% endif %}
-    </div>
-    <div>
+       &bull;
       {% if read_time != '0' %}
         {{ read_time }}
       {% else %}
