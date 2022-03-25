@@ -13,6 +13,9 @@ module.exports = {
       padding: {
         DEFAULT: '8rem',
         sm: '1rem'
+      },
+      screens: {
+        lg: '1024px'
       }
     },
     extend: {},
