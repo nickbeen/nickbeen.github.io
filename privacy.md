@@ -16,8 +16,8 @@ Visitors may share links of my posts with a share button powered by the [Web Sha
 
 Posts on my website may contain links to other websites. These websites may collect information, insert cookies or track your online presence. I have no control and therefore am not responsible for the privacy practices and content of these websites. But I try to be as transparent as possible about external links.
 
-## Hosted by Github
+## Hosted by GitHub
 
-This website is hosted by [Github](https://github.com) in the USA using [Github Pages](https://docs.github.com/en/pages).
-Github may collect User Personal Information from visitors including logs of visitor IP addresses to comply with legal obligations and to maintain the security and integrity of the Github website and service.
-The privacy practices of Github can be found on [github.com](https://docs.github.com/en/github/site-policy/global-privacy-practices).
+This website is hosted by [GitHub](https://github.com) in the USA using [GitHub Pages](https://docs.github.com/en/pages).
+GitHub may collect User Personal Information from visitors including logs of visitor IP addresses to comply with legal obligations and to maintain the security and integrity of the GitHub website and service.
+The privacy practices of GitHub can be found on [github.com](https://docs.github.com/en/github/site-policy/global-privacy-practices).
