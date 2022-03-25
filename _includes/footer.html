@@ -1,9 +1,5 @@
-<div>&copy; {{ 'now' | date: "%Y" }} Nick Been</div>
-<ul>
-  <li>
-    <a href="{% link disclaimer.md %}">Disclaimer</a>
-  </li>
-  <li>
-    <a href="{% link privacy.md %}">Privacy Policy</a>
-  </li>
-</ul>
+<footer class="flex justify-end gap-4">
+  <div>&copy; {{ 'now' | date: "%Y" }} Nick Been</div>
+  <a href="{% link disclaimer.md %}">Disclaimer</a>
+  <a href="{% link privacy.md %}">Privacy Policy</a>
+</footer>
