@@ -21,11 +21,11 @@ layout: default
         1
       {% endif %} min read
     </div>
-    <ul>
+    <div class="flex flex-wrap gap-4">
       {% for category in page.categories %}
-      <li>{{ category }}</li>
+      <span>{{ category }}</span>
       {% endfor %}
-    </ul>
+    </div>
   </header>
   {{ content }}
   <footer class="flex flex-wrap space-x-2">
