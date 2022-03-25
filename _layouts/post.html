@@ -2,10 +2,21 @@
 layout: default
 ---
 
+{% capture read_time %}
+  {{ page.content | number_of_words | divided_by: 180 }}
+{% endcapture %}
+
 <article>
   <header>
     <h1>{{ page.title }}</h1>
     <div>{{ page.date | date_to_rfc822 }}</div>
+    <div>
+      % if read_time != '0' %}
+        {{ read_time }}
+      {% else %}
+        1
+      {% endif %} min read
+    </div>
     <ul>
       {% for category in page.categories %}
       <li>{{ category }}</li>
