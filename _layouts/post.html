@@ -13,7 +13,7 @@ layout: default
       {{ page.date | date_to_rfc822 }}
       {% if page.last_modified_at %}
         (Last updated: {{ page.last_modified_at | date_to_rfc822 }})
-      {% else %}
+      {% endif %}
     </div>
     <div>
       {% if read_time != '0' %}
