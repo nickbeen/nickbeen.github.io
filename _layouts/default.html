@@ -5,9 +5,7 @@
     <title>{{ post.title | default: site.title }}</title>
   </head>
   <body class="container lg:container">
-    <header>
-      {% include header.html %}
-    </header>
+    {% include header.html %}
     <main>
       {{ content }}
     </main>
