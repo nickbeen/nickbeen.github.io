@@ -4,10 +4,19 @@
   "lang": "en",
   "id": "github",
   "start_url": "/index.html",
-  "icons": [{
-    "src": "assets/images/favicon.ico",
-    "sizes": "any"
-  }],
+  "icons": [
+    {
+      "src": "assets/images/logo-maskable.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    },
+    {
+      "src": "assets/images/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
   "display": "standalone",
   "background_color": "#121212",
   "theme_color": "#121212"
