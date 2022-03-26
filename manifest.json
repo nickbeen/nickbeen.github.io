@@ -1,13 +1,14 @@
 {
-  "short_name": "Nick Been",
+  "short_name": "NB",
   "name": "Nick Been",
+  "lang": "en",
+  "id": "github",
   "start_url": "/index.html",
   "icons": [{
     "src": "assets/images/favicon.ico",
     "sizes": "any"
   }],
   "display": "standalone",
-  "orientation": "portrait",
   "background_color": "#121212",
   "theme_color": "#121212"
 }
