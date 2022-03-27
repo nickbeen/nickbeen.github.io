@@ -1,5 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" xml:space="preserve">
   <style>
+    @media (prefers-color-scheme: light) {
+      .logo { fill: #000 }
+    }
     @media (prefers-color-scheme: dark) {
       .logo { fill: #fff }
     }
