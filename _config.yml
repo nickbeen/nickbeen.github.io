@@ -4,6 +4,7 @@ title: "Nick Been"
 
 exclude:
   - package*.json
+  - serviceworker.ts
   - tailwind.config.js
   - workbox-config.js
 
