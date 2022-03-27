@@ -4,9 +4,10 @@
     {% include head.html %}
     <title>{{ post.title | default: site.title }}</title>
   </head>
-  <body class="container lg:container">
+  <body class="container lg:container grid grid-rows-4">
     {% include header.html %}
-    <main>
+    {% include aside.html %}
+    <main class="col-span-3">
       {{ content }}
     </main>
     {% include footer.html %}
