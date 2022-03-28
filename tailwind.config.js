@@ -3,6 +3,7 @@ module.exports = {
     './_includes/*.html',
     './_layouts/*.html',
     './_posts/*.md',
+    './assets/images/*.svg',
     './assets/js/*.js',
     './*.{html,md}'
   ],
