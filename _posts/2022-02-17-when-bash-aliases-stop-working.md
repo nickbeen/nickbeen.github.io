@@ -5,11 +5,11 @@ tags: [bash, ssh]
 title: When bash_aliases stop working
 ---
 
-The other day I noticed my bash aliases on one of my servers weren't working anymore even though I hadn't touched them for months. No helpful colored output, no custom `ll` alias, nothing. Time to investigate!
+The other day I noticed my bash aliases on one of my servers weren't working anymore even though I had not touched them for months. No helpful colored output, no custom `ll` alias, nothing. Time to investigate!
 
 ## .bash_aliases
 
-Bash aliases allow you to make your own custom commands for a SSH user by editing a file called `.bash_aliases` in the home directory of your SSH user. It can be very helpful when you often use commands with the same flags. The `ll` command is a popular pick for showing all files including hidden files in a folder with the long listing format along with human readable filesizes.
+Bash aliases allow you to make your own custom commands for an SSH user by editing a file called `.bash_aliases` in the home directory of your SSH user. It can be very helpful when you often use commands with the same flags. The `ll` command is a popular pick for showing all files including hidden files in a folder with the long listing format along with human-readable filesize.
 
 ```bash
 alias ll="ls -lah"
@@ -45,11 +45,12 @@ The history file keeps tabs of the 500 last commands used by this SSH user. The 
 
 ## .profile
 
-There is actually one file that peaks my interest, the `.profile` file. When you open it with any editor, it becomes clear this file is also related to bash. This is the file that loads `.bashrc` during login. The second comment in the file explains the actual cause of the problem.
+There is actually one file that piques my interest, the `.profile` file. When you open it with any editor, it becomes clear this file is also related to bash. This is the file that loads `.bashrc` during login. The second comment in the file explains the actual cause of the problem.
 
 ```
-# This file is not read by bash(1), if ~/.bash_profile or ~/.bash_login
-# exists.
+# This file is not read by bash(1), if ~/.bash_profile or ~/.bash_login exists.
 ```
 
-And then it occured to me the day before I had rebuild the PHP 5.6 instance as I was working on phasing parts out of that legacy project. Rebuilding it -for some reason- created a new `.bash_profile` file which prevents `.bash_rc` and `.bash_aliases` from initializing during login. The fix was as easy as deleting the file since the PHP 5.6 path wasn't needed for login shells. That'll teach me for running a PHP 5.6 instance in 2022.
+And then it occurred to me the day before I had rebuild the PHP 5.6 instance as I was working on phasing parts out of that legacy project. Rebuilding it -for some reason- created a new `.bash_profile` file which prevents `.bash_rc` and `.bash_aliases` from initializing during login. The fix was as easy as deleting the file since the PHP 5.6 path wasn't needed for login shells.
+
+That'll teach me for running a PHP 5.6 instance in 2022.
