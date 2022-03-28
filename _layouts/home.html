@@ -2,11 +2,10 @@
 layout: default
 ---
 
-<ul>
-  {% for post in site.posts %}
-  <li>
-    <a href="{{ post.url }}">{{ post.title }}</a>
-    <div>{{ page.date | date_to_rfc822 }} - {{ post.excerpt }}</div>
-  </li>
-  {% endfor %}
-</ul>
+{% for post in site.posts %}
+<article class="my-4">
+  <a href="{{ post.url }}">{{ post.title }}</a>
+  <div>{{ post.date | date_to_string }}</div>
+  {{ post.excerpt }}
+</article>
+{% endfor %}
