@@ -6,8 +6,7 @@
   </head>
   <body class="container lg:container grid grid-cols-4">
     {% include header.html %}
-    {% include aside.html %}
-    <main class="col-span-3">
+    <main class="col-span-full lg:col-span-3">
       {{ content }}
     </main>
     {% include footer.html %}
