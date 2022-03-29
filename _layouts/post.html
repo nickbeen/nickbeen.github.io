@@ -8,7 +8,6 @@ layout: default
 
 <article>
   <header>
-    <h1>{{ page.title }}</h1>
     <div>
       {{ page.date | date_to_string }}
       {% if page.last_modified_at %}
@@ -21,6 +20,7 @@ layout: default
         1
       {% endif %} min read
     </div>
+    <h1>{{ page.title }}</h1>
     <div class="flex flex-wrap gap-4">
       {% for category in page.categories %}
       <span>{{ category }}</span>
