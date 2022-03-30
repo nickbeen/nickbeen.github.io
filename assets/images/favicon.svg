@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" xml:space="preserve">
+  <style>
+    @media (prefers-color-scheme: light) {
+      .logo { fill: #000 }
+    }
+    @media (prefers-color-scheme: dark) {
+      .logo { fill: #fff }
+    }
+  </style>
+  <path class="logo" d="M44 32c6.6 0 12 5.4 12 12s-5.4 12-12 12H32V32h12zM44 8c6.6 0 12 5.4 12 12s-5.4 12-12 12H32V8h12zM20 56H8V8h16l20 48H32L20 24" shape-rendering="geometricPrecision" />
+</svg>
