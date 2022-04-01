@@ -4,5 +4,5 @@
       .logo { fill: #fff }
     }
   </style>
-  <path d="M60 48c6.6 0 12 5.4 12 12s-5.4 12-12 12H48V48h12zM60 24c6.6 0 12 5.4 12 12s-5.4 12-12 12H48V24h12zM36 72H24V24h16l20 48H48L36 40"/>
+  <path d="M60 48c6.6 0 12 5.4 12 12s-5.4 12-12 12H48V48h12zM60 24c6.6 0 12 5.4 12 12s-5.4 12-12 12H48V24h12zM36 72H24V24h16l20 48H48L36 40" shape-rendering="geometricPrecision" />
 </svg>
