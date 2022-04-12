@@ -1,4 +1,5 @@
 User-agent: *
-Allow: /
+Disallow: /offline.html
+Disallow: /test.html
 
 Sitemap: https://nickbeen/sitemap.xml
