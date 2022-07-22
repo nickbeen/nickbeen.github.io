@@ -6,10 +6,19 @@
   "start_url": "/index.html",
   "icons": [
     {
+      "src": "assets/images/logo-maskable.png",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
       "src": "assets/images/logo-maskable.svg",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "maskable"
+    },
+    {
+      "src": "assets/images/logo.png",
+      "type": "image/png"
     },
     {
       "src": "assets/images/logo.svg",
