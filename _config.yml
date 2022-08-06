@@ -10,5 +10,6 @@ exclude:
 
 plugins:
   - jekyll-feed
+  - jekyll-jemoji
   - jekyll-seo-tag
   - jekyll-sitemap
