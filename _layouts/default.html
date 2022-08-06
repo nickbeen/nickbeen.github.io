@@ -9,12 +9,5 @@
       {{ content }}
     </main>
     {% include footer.html %}
-    <script>
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/assets/js/serviceworker.js');
-        })
-      }
-    </script>
   </body>
 </html>
