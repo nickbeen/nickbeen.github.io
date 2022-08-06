@@ -1,3 +1,5 @@
+const plugin = require('tailwindcss/plugin')
+
 module.exports = {
   content: [
     './_includes/*.html',
@@ -21,5 +23,24 @@ module.exports = {
     },
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ addVariant, e }) {
+      addVariant('light', ({modifySelectors, separator}) => {
+        modifySelectors(({className}) => {
+          return `html[color-theme='light'] .${e(
+            `light${separator}${className}`
+          )}`
+        })
+      })
+    }),
+    plugin(function ({ addVariant, e }) {
+      addVariant('system', ({ modifySelectors, separator }) => {
+        modifySelectors(({ className }) => {
+          return `html[color-theme='system'] .${e(
+            `system${separator}${className}`
+          )}`
+        })
+      })
+    }),
+  ],
 }
