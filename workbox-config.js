@@ -1,4 +1,5 @@
 module.exports = {
+  globDirectory: __dirname,
 	globPatterns: [
 		'assets/**/*.{css,js,svg}'
 	],
