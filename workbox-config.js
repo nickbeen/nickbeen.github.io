@@ -3,6 +3,6 @@ module.exports = {
 	globPatterns: [
 		'**/*.{css,js,svg}'
 	],
-	swDest: './assets/js/serviceworker.js',
+	swDest: './serviceworker.js',
 	swSrc: './assets/js/serviceworker.js'
 };
