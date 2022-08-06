@@ -1,5 +1,5 @@
 module.exports = {
-	globDirectory: 'assets',
+	globDirectory: 'assets/',
 	globPatterns: [
 		'**/*.{css,js,svg}'
 	],
