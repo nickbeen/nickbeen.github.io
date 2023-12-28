@@ -11,3 +11,8 @@ updates:
       - nickbeen
     schedule:
       interval: "weekly"
+    groups:
+      workbox:
+        patterns:
+          - "esbuild"
+          - "workbox*"
