@@ -10,7 +10,7 @@
   "devDependencies": {
     "esbuild": "^0.24.0",
     "tailwindcss": "^3.4.14",
-    "workbox-cli": "^7.1.0",
+    "workbox-cli": "^7.3.0",
     "workbox-precaching": "^7.0.0",
     "workbox-recipes": "^7.0.0"
   }
